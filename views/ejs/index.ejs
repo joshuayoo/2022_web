@@ -1,0 +1,14 @@
+    <%- include('head') %>
+    <body>
+        <%- include('navbar') %>
+        <div class="text-align: center">
+            <% if(path === '/' || path === '/logout') { %>
+                <%- include('home') %>
+            <% } else { %>
+                <%- include(path.replace('/', '')) %>
+            <% } %>
+
+        </div>
+        
+    </body>
+    </html>

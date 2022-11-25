@@ -1,0 +1,18 @@
+<title>Movie - board</title>
+
+<h1>board</h1>
+<div>
+  <% for(var i = 0; i < result.length; i++) { %>
+  <div>
+    <a href="board/<%= result[i].id%>">
+      <span><%= result[i].id %></span>
+      <span><%= result[i].author %></span>
+      <span><%= result[i].title %></span>
+      <span><%= result[i].content %></span>
+      <span><%= result[i].date %></span>
+      <span><%= result[i].link %></span>
+    </a>
+  </div>
+  <% } %>
+  <a href="write"><button>쓰기</button></a>
+</div>
