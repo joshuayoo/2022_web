@@ -1,41 +1,102 @@
 <title>Movie - Register</title>
 
-<h1>Register</h1>
 <div class="register">
+  <h1>Register</h1>
   <form method="POST" action="/register">
-    <input id="id" name="id" type="text" placeholder="아이디" /><br />
+    <input class="input2" name="id" type="text" placeholder="아이디" /><br />
     <input
-      id="password"
+      class="input2"
       name="password"
       type="text"
       placeholder="비밀번호"
     /><br />
     <input
-      id="phone"
+      class="input2"
       name="phone"
       tybe="text"
       placeholder="핸드폰 전번"
     /><br />
     <input
-      id="email"
+      class="input2"
       name="email"
       type="email"
       placeholder="example@example.com"
     /><br />
 
-    <input type="checkbox" name="check" value="action" required />액션 영화<br />
-    <input type="checkbox" name="check" value="crime" />범죄 영화<br />
-    <input type="checkbox" name="check" value="SF" />SF 영화<br />
-    <input type="checkbox" name="check" value="comedy" />코미디 영화<br />
-    <input type="checkbox" name="check" value="romance" />로맨스 코미디<br />
-    <input type="checkbox" name="check" value="thriller" />스릴러 영화<br />
-    <input type="checkbox" name="check" value="horror" />공포 영화<br />
-    <input type="checkbox" name="check" value="war" />전쟁 영화<br />
-    <input type="checkbox" name="check" value="sports" />스포츠 영화<br />
-    <input type="checkbox" name="check" value="fantasy" />판타지 영화<br />
-    <input type="checkbox" name="check" value="music" />음악 영화<br />
-    <input type="checkbox" name="check" value="musical" />뮤지컬 영화<br />
-    <input type="checkbox" name="check" value="melodramatic" />멜로 영화<br />
+    <input
+      style="margin-top: 10px"
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Action"
+    />액션 영화
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Adventure"
+    />어드벤쳐 영화<br />
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Animation"
+    />애니 영화
+    <input class="checkbox" type="checkbox" name="check" value="Comedy" />코미디
+    영화<br />
+    <input class="checkbox" type="checkbox" name="check" value="Crime" />범죄
+    영화
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Documentary"
+    />다큐멘터리<br />
+    <input class="checkbox" type="checkbox" name="check" value="Drama" />드라마
+    <input class="checkbox" type="checkbox" name="check" value="Family" />가족
+    영화<br />
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Fantasy"
+    />판타지 영화
+    <input class="checkbox" type="checkbox" name="check" value="History" />역사
+    영화<br />
+    <input class="checkbox" type="checkbox" name="check" value="Horror" />공포
+    영화
+    <input class="checkbox" type="checkbox" name="check" value="Music" />음악
+    영화<br />
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Mystery"
+    />미스터리 영화
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Romance"
+    />로맨스 영화<br />
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Science_Fiction"
+    />과학 영화
+    <input class="checkbox" type="checkbox" name="check" value="TV_Movie" />TV
+    영화<br />
+    <input
+      class="checkbox"
+      type="checkbox"
+      name="check"
+      value="Thriller"
+    />스릴러 영화
+    <input class="checkbox" type="checkbox" name="check" value="War" />전쟁
+    영화<br />
+    <input class="checkbox" type="checkbox" name="check" value="Western" />서부
+    영화 <br />
     <button type="submit">회원가입</button>
   </form>
 </div>

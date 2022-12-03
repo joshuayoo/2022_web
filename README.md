@@ -58,4 +58,4 @@
 ## }
 
 
-INSERT INTO `user` (`passward`, `phone`, `email`, `Action`, `Adventure`, `Animation`, `Comedy`, `Crime`, `Documentary`, `Drama`, `Family`, `Fantasy`, `History`, `Horror`, `Music`, `Mystery`, `Romance`, `Science_Fiction`, `TV_Movie`, `Thriller`, `War`, `Western`) VALUES ('admin', '01086553474', 'joshuayoo0120@gmail.com', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '1', '1', '0', '0', '1', '1', '0', '0');
+INSERT INTO `user` (`id`,`passward`, `phone`, `email`, `Action`, `Adventure`, `Animation`, `Comedy`, `Crime`, `Documentary`, `Drama`, `Family`, `Fantasy`, `History`, `Horror`, `Music`, `Mystery`, `Romance`, `Science_Fiction`, `TV_Movie`, `Thriller`, `War`, `Western`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);

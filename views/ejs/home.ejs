@@ -2,3 +2,29 @@
 
 <h1>Home</h1>
 
+<div style="margin-bottom: 10px">
+  <% if(session) { %>
+  <span>장르 필터 적용(장르가 여러 개면 겹칠 수 있음)</span>
+  <% } else { %>
+  <span>인기 순</span>
+  <% } %>
+</div>
+<div class="Home">
+  <% for(var i = 1; i < result.length; i++) { %>
+  <div class="movielist">
+    <img
+      src="https://image.tmdb.org/t/p/original<%= result[i].poster_path %>"
+    />
+    <br />
+    <div class="movie_title"><span><%= result[i].title %></span> <br /></div>
+    <div class="movie_description">
+      <% if(result[i].overview) { %>
+      <span><%= result[i].overview.slice(0, 140) %>...</span>
+
+      <% } else { %>
+      <span>설명 없음</span>
+      <% } %>
+    </div>
+  </div>
+  <% } %>
+</div>

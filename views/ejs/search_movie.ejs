@@ -1,3 +1,30 @@
 <title>Movie - search_movie</title>
 
-<h1>search_movie</h1>
+<div class="search_movie">
+  <h1>search_movie</h1>
+  <form action="/search_movie" method="post" style="margin-bottom: 10px">
+    <input type="text" placeholder="검색" name="query" /> <br />
+    <button type="submit">검색</button>
+  </form>
+  <% if(result.length == 0) { %>
+  <span>검색 결과 없음</span>
+  <% } else { %>
+  <div class="movielist">
+    <div>
+      <img
+        src="https://image.tmdb.org/t/p/original<%= result[0].poster_path %>"
+      />
+      <br />
+      <div class="movie_title"><span><%= result[0].title %></span> <br /></div>
+      <div class="movie_description">
+        <% if(result[0].overview) { %>
+        <span><%= result[0].overview.slice(0, 30) %>...</span>
+
+        <% } else { %>
+        <span>설명 없음</span>
+        <% } %>
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>

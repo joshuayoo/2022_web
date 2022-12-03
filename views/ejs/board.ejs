@@ -1,18 +1,29 @@
 <title>Movie - board</title>
 
-<h1>board</h1>
-<div>
-  <% for(var i = 0; i < result.length; i++) { %>
-  <div>
-    <a href="board/<%= result[i].id%>">
-      <span><%= result[i].id %></span>
-      <span><%= result[i].author %></span>
-      <span><%= result[i].title %></span>
-      <span><%= result[i].content %></span>
-      <span><%= result[i].date %></span>
-      <span><%= result[i].link %></span>
-    </a>
-  </div>
-  <% } %>
+<div class="board">
+  <h1>board</h1>
+  <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>author</th>
+            <th>title</th>
+            <th>date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i = 0; i < result.length; i++) { %>
+            <tr>
+                <td><a href="board/<%= result[i].id%>"><%= result[i].id %></a></td>
+                <td><%= result[i].author %></td>
+                <td><a href="board/<%= result[i].id%>"><%= result[i].title %></a></td>
+                <td><%= result[i].date %></td>
+            </tr>
+              <% } %>
+        </tbody>
+  </table>
+</div>
   <a href="write"><button>쓰기</button></a>
 </div>
+

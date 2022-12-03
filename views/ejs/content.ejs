@@ -1,12 +1,11 @@
 <title>Movie - content</title>
 
-<h1>content</h1>
 
-<div class="write">
-  <span><%= result.id %></span>
-  <span><%= result.author %></span>
-  <span><%= result.title %></span>
-  <span><%= result.content %></span>
-  <span><%= result.date %></span>
-  <span><%= result.link %></span>
+<div class="content">
+  <h1>content</h1>
+  <span class="title"><%= result.title %></span> <br />
+  <span class="content"><%= result.content %></span> <br />
+  link : <span class="link"><%= result.link %></span> <br />
+
+  <a href="/board"><button>돌아가기</button></a>
 </div>

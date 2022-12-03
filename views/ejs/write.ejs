@@ -4,10 +4,11 @@
 
 <div class="write">
   <form method="POST" action="/board">
-    <input name="title" type="text" placeholder="제목" /><br />
-    <textarea name="content" placeholder="내용"></textarea> <br />
-    <input name="link" tybe="text" placeholder="링크" /><br />
+    <input name="title" type="text" placeholder="제목"  required/><br />
+    <textarea name="content" placeholder="내용" required></textarea> <br />
+    <input name="link" tybe="url" placeholder="링크" /><br />
 
     <button type="submit">쓰기</button>
   </form>
+  <a href="/board"><button>돌아가기</button></a>
 </div>
